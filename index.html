@@ -1,13 +1,12 @@
 <html>
-
-<input id="input" placeholder="Add the name of an item" style="width:190px"></input>
+<input id="input" placeholder="Add the name of a facilitator" style="width:190px"></input>
 <br><br>
-<button id="add">Add Item</button>
+<button id="add">Add an Item </button>
 <br><br>
 <span id="added-info"></span>
 <br><br>
 <button id="show-all">Show All Items</button>
-<ul id="list-of-items"><ul>
+<ul id="list-of-facilitators"><ul>
 <script>
 var facilitators, color;
 
@@ -46,24 +45,6 @@ document.getElementById('add').addEventListener('click', (event) => {
     element_added_info2.innerText = '- Added Successffully';
     element_added_info2.style.backgroundColor = randomMember(color);
   }
-
-});
-
-document.getElementById('select').addEventListener('click', (event) => {
-  let element_select_info = document.getElementById('select-info');
-  element_select_info.innerText = randomMember(facilitators);
-
-});
-
-document.getElementById('show-all').addEventListener('click', (event) => {
-  let element_list_of_facilitators = document.getElementById('list-of-items');
-  element_list_of_facilitators.replaceChildren();
-  facilitators.forEach((facilitators) => {
-    let new_li = document.createElement('li');
-    new_li.innerText = facilitators;
-
-    element_list_of_facilitators.appendChild(new_li);
-  });
 
 });
 </script>
