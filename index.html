@@ -32,7 +32,7 @@ document.getElementById(“add”).addEventListener(“click”, (event) => {
   if (getNumberOrString(document.getElementById(“input”).value) == “”) {
     let element_added_info = document.getElementById(“added-info”);
     window.speechSynthesis.speak(
-      new SpeechSynthesisUtterance(“Please enter a name”)
+      new SpeechSynthesisUtterance(“Please enter a name”) 
     );
   } else {
     facilitators.push(
