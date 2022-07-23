@@ -56,7 +56,7 @@ document.getElementById('select').addEventListener('click', (event) => {
 });
 
 document.getElementById('show-all').addEventListener('click', (event) => {
-  let element_list_of_facilitators = document.getElementById('list-of-facilitators');
+  let element_list_of_facilitators = document.getElementById('list-of-items');
   element_list_of_facilitators.replaceChildren();
   facilitators.forEach((facilitators) => {
     let new_li = document.createElement('li');
